@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La Creperie — Crepas, chocolate y café en Campo Real, Zapopan</title>
+<meta name="description" content="La Creperie: crepas dulces y saladas, chocolate caliente y café en Av. Campo Márquez 225, Campo Real, Zapopan. Pide por WhatsApp.">
+<meta property="og:title" content="La Creperie — Campo Real, Zapopan">
+<meta property="og:description" content="Crepas, chocolate caliente y café a la vuelta de tu casa. Pide por WhatsApp.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#1E6B6E">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https:; frame-src https://www.google.com https://maps.google.com; script-src 'none'; base-uri 'self'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%231E6B6E'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='30' font-weight='700' text-anchor='middle' fill='%23FBF7F1'%3ELC%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#FBF7F1; --sand:#EADFD2; --teal:#1E6B6E; --teal-dark:#134A4C;
+  --choco:#3B241B; --text:#3B241B; --muted:#5A4036; --soft:#6B5246; --white:#FFFFFF;
+  --serif:"Fraunces", Georgia, serif; --sans:"Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--text);font-family:var(--sans);line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:var(--teal)}a:hover{color:var(--teal-dark)}
+img{max-width:100%;display:block}
+.wrap{max-width:1160px;margin:0 auto;padding-left:24px;padding-right:24px}
+.banner{background:var(--choco);color:var(--cream);text-align:center;font-size:13px;padding:8px 16px}
+header.top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding-top:20px;padding-bottom:20px}
+.logo{display:flex;flex-direction:column;gap:2px;text-decoration:none}
+.logo b{font-family:var(--serif);font-size:28px;letter-spacing:.04em;color:var(--teal)}
+.logo small{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--soft)}
+nav{display:flex;flex-wrap:wrap;gap:24px;font-size:15px;font-weight:500}
+nav a{text-decoration:none;color:var(--text);padding:10px 0}
+nav a:hover{color:var(--teal)}
+.hero{display:flex;flex-wrap:wrap;gap:48px;align-items:center;padding-top:40px;padding-bottom:72px}
+.hero-text{flex:1 1 420px;display:flex;flex-direction:column;gap:24px}
+.eyebrow{font-size:14px;font-weight:600;color:var(--teal);letter-spacing:.08em;text-transform:uppercase}
+h1{margin:0;font-family:var(--serif);font-size:clamp(38px,6vw,68px);line-height:1.05;font-weight:700}
+.lead{margin:0;font-size:18px;line-height:1.6;color:var(--muted);max-width:520px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:10px;font-weight:600;font-size:16px;padding:14px 24px;border-radius:999px;min-height:48px;text-decoration:none;transition:transform .15s ease, background .15s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn:focus-visible,nav a:focus-visible{outline:3px solid #E0A458;outline-offset:3px}
+.btn-primary{background:var(--teal);color:var(--white)}
+.btn-primary:hover{background:var(--teal-dark);color:var(--white)}
+.btn-outline{border:2px solid var(--teal);color:var(--teal);padding:12px 22px}
+.btn-dark{background:var(--choco);color:var(--white)}
+.btn-dark:hover{color:var(--white);background:#2A1912}
+.btn-light{background:var(--cream);color:var(--choco)}
+.btn-light:hover{color:var(--choco)}
+.proof{display:flex;flex-wrap:wrap;gap:24px;font-size:14px;color:var(--soft)}
+.ph{background:var(--sand);border-radius:28px;display:flex;align-items:center;justify-content:center;color:var(--soft);font-size:15px;text-align:center;padding:24px}
+.hero-img{flex:1 1 380px;aspect-ratio:4/3.4}
+.menu{background:var(--white);padding:72px 0}
+h2{margin:0;font-family:var(--serif);font-weight:700}
+.menu h2{font-size:clamp(32px,4vw,44px)}
+.menu .sub{margin:10px 0 40px;font-size:16px;color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
+.card{background:var(--cream);border-radius:20px;padding:28px;display:flex;flex-direction:column;gap:16px}
+.card .ph{aspect-ratio:16/10;border-radius:14px;font-size:13px}
+.card h3{margin:0;font-family:var(--serif);font-size:24px;color:var(--teal)}
+.card p{margin:0;font-size:15px;line-height:1.55;color:var(--muted)}
+.items{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px;font-size:15px}
+.items li{display:flex;justify-content:space-between;gap:12px}
+.items li span:last-child{font-weight:600}
+.info{display:flex;flex-wrap:wrap;align-items:flex-start;gap:32px;padding-top:72px;padding-bottom:72px}
+.box{flex:1 1 340px;border-radius:24px;padding:36px;display:flex;flex-direction:column;gap:20px}
+.box h2{font-size:34px}
+.hours{background:var(--teal);color:var(--white)}
+.hours dl{margin:0;display:flex;flex-direction:column;gap:12px;font-size:17px}
+.hours .row{display:flex;justify-content:space-between;gap:16px;padding-bottom:12px;border-bottom:1px solid rgba(255,255,255,.25)}
+.hours .row:last-child{border-bottom:0;padding-bottom:0}
+.hours dt,.hours dd{margin:0}.hours dd{font-weight:600}
+.hours .note{margin:0;font-size:14px;color:#D7ECEC}
+.where{background:var(--white)}
+.where address{font-style:normal;font-size:17px;line-height:1.6}
+.map{aspect-ratio:16/8;border-radius:14px}
+.cta{background:var(--choco);color:var(--cream);padding:64px 24px;text-align:center}
+.cta .inner{max-width:720px;margin:0 auto;display:flex;flex-direction:column;gap:20px;align-items:center}
+.cta h2{font-size:clamp(30px,4vw,38px)}
+.cta p{margin:0;font-size:17px;color:#E8DCCF}
+footer{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:13px;color:var(--soft);padding-top:28px;padding-bottom:28px}
+.wa-float{position:fixed;right:18px;bottom:18px;width:58px;height:58px;border-radius:50%;background:#1F8F5F;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(0,0,0,.18);z-index:10}
+.wa-float:hover{color:#fff;background:#18734C}
+@media (max-width:600px){
+  nav{gap:18px}
+  .hero{padding-top:16px;gap:32px}
+  .box{padding:28px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
+
+<div class="banner">Propuesta de diseño — el menú y las fotos se reemplazan con los reales del negocio</div>
+
+<header class="wrap top">
+  <a class="logo" href="#" aria-label="La Creperie, inicio">
+    <b>LA CRÉPERIE</b>
+    <small>café · chocolaterie · crêpes</small>
+  </a>
+  <nav aria-label="Principal">
+    <a href="#menu">Menú</a>
+    <a href="#horario">Horario</a>
+    <a href="#ubicacion">Ubicación</a>
+  </nav>
+</header>
+
+<main>
+<section class="wrap hero">
+  <div class="hero-text">
+    <span class="eyebrow">Campo Real, Zapopan</span>
+    <h1>Crepas, chocolate caliente y café, a la vuelta de tu casa.</h1>
+    <p class="lead">Recomendado por el 96% de nuestros clientes. Ven por la tarde a consentirte o pide para llevar por WhatsApp.</p>
+    <div class="btns">
+      <a class="btn btn-primary" href="https://wa.me/523343373440?text=Hola%2C%20quiero%20hacer%20un%20pedido" target="_blank" rel="noopener noreferrer">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.5 8.5 0 1 1 21 11.5z"/></svg>
+        Pedir por WhatsApp</a>
+      <a class="btn btn-outline" href="tel:+523343373440">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+        Llamar</a>
+    </div>
+    <div class="proof">
+      <span>★ 96% recomendado</span>
+      <span>2 mil seguidores en Facebook</span>
+      <span>Precios accesibles</span>
+    </div>
+  </div>
+  <div class="ph hero-img" role="img" aria-label="Espacio para la foto principal">[Foto principal: crepa con chocolate y bombones]</div>
+</section>
+
+<section id="menu" class="menu">
+  <div class="wrap">
+    <h2>Nuestro menú</h2>
+    <p class="sub">Menú de ejemplo — aquí van sus platillos y precios reales.</p>
+    <div class="cards">
+      <article class="card">
+        <div class="ph">[Foto]</div>
+        <h3>Crepas dulces</h3>
+        <p>Rellenas de chocolate, frutas, cajeta y más.</p>
+        <ul class="items"><li><span>[Platillo]</span><span>[$ precio]</span></li><li><span>[Platillo]</span><span>[$ precio]</span></li><li><span>[Platillo]</span><span>[$ precio]</span></li></ul>
+      </article>
+      <article class="card">
+        <div class="ph">[Foto]</div>
+        <h3>Crepas saladas</h3>
+        <p>Para la cena: jamón, quesos, pollo y vegetales.</p>
+        <ul class="items"><li><span>[Platillo]</span><span>[$ precio]</span></li><li><span>[Platillo]</span><span>[$ precio]</span></li><li><span>[Platillo]</span><span>[$ precio]</span></li></ul>
+      </article>
+      <article class="card">
+        <div class="ph">[Foto]</div>
+        <h3>Chocolatería</h3>
+        <p>Chocolate caliente con bombones para las tardes frías.</p>
+        <ul class="items"><li><span>[Platillo]</span><span>[$ precio]</span></li><li><span>[Platillo]</span><span>[$ precio]</span></li><li><span>[Platillo]</span><span>[$ precio]</span></li></ul>
+      </article>
+      <article class="card">
+        <div class="ph">[Foto]</div>
+        <h3>Café y bebidas</h3>
+        <p>Café de especialidad, frappés y bebidas frías.</p>
+        <ul class="items"><li><span>[Platillo]</span><span>[$ precio]</span></li><li><span>[Platillo]</span><span>[$ precio]</span></li><li><span>[Platillo]</span><span>[$ precio]</span></li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="wrap info">
+  <div id="horario" class="box hours">
+    <h2>Horario</h2>
+    <dl>
+      <div class="row"><dt>Lunes a sábado</dt><dd>5:00 pm – 10:30 pm</dd></div>
+      <div class="row"><dt>Domingo</dt><dd>4:00 pm – 10:00 pm</dd></div>
+    </dl>
+    <p class="note">Horario tomado de su Facebook; se confirma antes de publicar.</p>
+  </div>
+  <div id="ubicacion" class="box where">
+    <h2>Cómo llegar</h2>
+    <address>Av. Campo Márquez 225, local 22<br>Campo Real, Zapopan, Jalisco</address>
+    <iframe class="map" title="Mapa de La Creperie" src="https://maps.google.com/maps?q=Av.%20Campo%20M%C3%A1rquez%20225%2C%20Campo%20Real%2C%20Zapopan&output=embed" style="border:0;width:100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <a class="btn btn-dark" style="align-self:flex-start" href="https://maps.google.com/?q=Av.+Campo+M%C3%A1rquez+225,+Campo+Real,+Zapopan" target="_blank" rel="noopener noreferrer">Abrir en Google Maps</a>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="inner">
+    <h2>¿Se te antojó?</h2>
+    <p>Haz tu pedido para llevar o reserva tu mesa en un mensaje.</p>
+    <a class="btn btn-light" href="https://wa.me/523343373440?text=Hola%2C%20quiero%20hacer%20un%20pedido" target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a>
+  </div>
+</section>
+</main>
+
+<footer class="wrap">
+  <span>© 2026 La Creperie · Campo Real, Zapopan</span>
+  <span>Diseño de muestra</span>
+</footer>
+
+<a class="wa-float" href="https://wa.me/523343373440?text=Hola%2C%20quiero%20hacer%20un%20pedido" target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.5 8.5 0 1 1 21 11.5z"/></svg>
+</a>
+
+</body>
+</html>
